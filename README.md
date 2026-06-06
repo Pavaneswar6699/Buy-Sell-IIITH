@@ -1,81 +1,96 @@
-# Buy, Sell @ IIITH
+# Buy-Sell-IIITH 🛒
 
-A dedicated Buy-Sell web portal built using the MERN stack for the IIIT Hyderabad community. This platform allows users to list items for sale, browse listings, add to cart, place orders with OTP verification, and manage transactions securely.
+A **full-stack marketplace platform** designed for IIITH campus community to buy, sell, and trade items seamlessly.
 
-## MERN Stack
+## 🎯 Project Overview
+This application provides an intuitive interface for students to post listings, browse items, and conduct transactions within the campus community. It combines modern web technologies with essential e-commerce features.
 
-- **Frontend**: React.js (with optional libraries like Tailwind CSS, MUI)
-- **Backend**: Express.js with Node.js
-- **Database**: MongoDB
-- **Authentication**: JWT + bcrypt
+## ✨ Key Features
+- ✅ User authentication & account management
+- ✅ Create, edit, and delete product listings
+- ✅ Browse marketplace with search & filtering
+- ✅ Real-time notifications
+- ✅ Secure transaction handling
+- ✅ User profiles with rating system
+- ✅ Chat/messaging between buyers and sellers
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **React.js** - Component-based UI
+- **HTML5 & CSS3** - Responsive design
+- **JavaScript ES6+** - Modern JavaScript
+
+### Backend
+- **Node.js** - Runtime environment
+- **Express.js** - Web framework
+- **MongoDB/SQL** - Database
+
+### Tools & Deployment
+- **Git & GitHub** - Version control
+- **RESTful APIs** - Backend communication
+
+## 📦 Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/Pavaneswar6699/Buy-Sell-IIITH.git
+cd Buy-Sell-IIITH
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+# Update .env with your configuration
+
+# Start the application
+npm start
+```
+
+## 📖 Usage
+1. **Sign up** for a new account
+2. **Create listings** by uploading images and descriptions
+3. **Browse** available products
+4. **Connect** with other users
+5. **Complete transactions** securely
+
+## 🏗️ Project Structure
+```
+Buy-Sell-IIITH/
+├── public/              # Static files
+├── src/
+│   ├── components/      # React components
+│   ├── pages/          # Page components
+│   ├── services/       # API calls
+│   ├── styles/         # CSS files
+│   └── App.js          # Main app component
+├── server/             # Backend files
+│   ├── routes/         # API routes
+│   ├── models/         # Database models
+│   └── middleware/     # Custom middleware
+└── package.json        # Dependencies
+```
+
+## 🚀 Future Enhancements
+- [ ] Payment gateway integration
+- [ ] Advanced recommendation system
+- [ ] Mobile app development
+- [ ] Analytics dashboard
+
+## 🤝 Contributing
+Contributions are welcome! Please follow these steps:
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👨‍💻 Author
+**Pavaneswar** - [GitHub Profile](https://github.com/Pavaneswar6699)
 
 ---
-
-## Features
-
-### User Authentication
-
-- Registration with IIIT email only
-- Login with session persistence (until logout)
-- Hashed password storage using `bcrypt`
-- JWT-based route protection
-- Optional: Google ReCAPTCHA, CAS Login
-
-### User Model Includes
-
-- First Name, Last Name, Email (IIIT only)
-- Age, Contact Number
-- Password (hashed)
-- Cart (array of item IDs)
-
-### Item Model Includes
-
-- Name, Price, Description
-- Category (e.g., clothing, grocery)
-- Seller ID
-
-### Order Model Includes
-
-- Transaction ID
-- Buyer ID, Seller ID
-- Total Amount
-- Hashed OTP
-
----
-
-## Pages & Use Cases
-
-### 1. **Dashboard + Navbar**
-- Navbar persists across all internal pages
-- Profile page with user info and editable fields
-
-### 2. **Search Items Page**
-- Search bar (case-insensitive)
-- Category-based filtering (multi-select)
-- Item cards with name, price, seller
-- Click to open item details
-
-### 3. **Item Page**
-- View full item description, seller, and price
-- Add to Cart button
-- Buy Now button
-- Edit Item button
-- Delete Item button
-
-### 4. **My Cart**
-- Displays added items
-- Remove items from cart
-- Show total price
-- Place final order (generates OTP)
-
-### 5. **Orders History**
-- Tabs for:
-  - Pending Orders (with OTPs)
-  - Purchased Items
-  - Sold Items
-
-### 6. **Deliver Items**
-- Sellers view pending deliveries
-- Enter OTP to confirm delivery
-- Valid OTP completes transaction and updates DB
-
+⭐ If you find this project useful, please consider giving it a star!
